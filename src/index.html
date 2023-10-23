@@ -6,8 +6,29 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+ 
+  <script>
+      function decodeJWTToken(token) {
+        return JSON.parse(atob(token.split(".")[1]));
+      }
+      function handleCredentialResponse(response) {
+        // to decode the credential response.
+        const responsePayload = decodeJWTToken(response.credential);
+        sessionStorage.setItem("loggedInUser", JSON.stringify(responsePayload));
+        window.location.href = "/dashboard";
+      }
+      function handleSignout() {
+        google.accounts.id.disableAutoSelect();
+      }    
+  </script>
 </head>
 <body>
   <app-root></app-root>
+  <button id="authorize_button" onclick="handleAuthClick()"></button>
+  <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+  <script type="text/javascript" src="./assets/scripts/googleEvent.js"> </script>
+  <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+  <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
 </body>
 </html>
