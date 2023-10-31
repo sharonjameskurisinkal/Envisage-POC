@@ -1,0 +1,107 @@
+.div {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #1c1c1c;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px 0 16px;
+}
+@media (max-width: 991px) {
+  .div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.div-2 {
+  align-self: stretch;
+  display: flex;
+  margin-top: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5px;
+}
+@media (max-width: 991px) {
+  .div-2 {
+    justify-content: center;
+  }
+}
+.img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  width: 28px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  align-self: stretch;
+  max-width: 100%;
+}
+.div-3 {
+  color: #fff;
+  margin: auto 0;
+  font: 700 14px/142.857% Exo, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+.img-2 {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  width: 14px;
+  transform: rotate(90deg);
+  overflow: hidden;
+  align-self: center;
+  max-width: 100%;
+  margin: auto 0;
+}
+.div-4 {
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-self: stretch;
+  display: flex;
+  margin-top: 10px;
+  width: 321px;
+  max-width: 100%;
+  flex-direction: column;
+  padding: 6px 20px;
+}
+.div-5 {
+  color: #fff;
+  opacity: 0.6;
+  align-self: start;
+  text-wrap: nowrap;
+  font: 400 12px/133.333% Exo, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+@media (max-width: 991px) {
+  .div-5 {
+    text-wrap: initial;
+  }
+}
+.div-6 {
+  align-self: stretch;
+  display: flex;
+  margin-top: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+.img-3 {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  overflow: hidden;
+  flex: 1;
+  margin: auto 0;
+}
+.img-4 {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  flex: 1;
+}

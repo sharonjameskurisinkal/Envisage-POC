@@ -6,6 +6,8 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap" rel="stylesheet">
 
  
   <script>
@@ -20,13 +22,14 @@
       }
       function handleSignout() {
         google.accounts.id.disableAutoSelect();
-      }    
+      }  
+        
   </script>
 </head>
-<body>
+<body style="margin: 0px;">
   <app-root></app-root>
-  <button id="authorize_button" onclick="handleAuthClick()"></button>
-  <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+  <!-- <button  id="authorize_button" onclick="handleAuthClick()"></button>
+  <button   id="signout_button" onclick="handleSignoutClick()">Sign Out</button> -->
   <script type="text/javascript" src="./assets/scripts/googleEvent.js"> </script>
   <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
   <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>

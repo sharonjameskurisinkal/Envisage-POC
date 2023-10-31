@@ -12,6 +12,9 @@ import { TimeLogComponent } from './components/time-log/time-log.component';
 import { EnvisageTimelogComponent } from './components/envisage-timelog/envisage-timelog.component';
 import { LoginComponent } from './components/login/login.component';
 import { BookingsComponent } from './components/bookings/bookings.component';
+import { SideNavbarComponent } from './components/side-navbar/side-navbar.component';
+import { EventSchedulerComponent } from './components/event-scheduler/event-scheduler.component';
+import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { BookingsComponent } from './components/bookings/bookings.component';
     TimeLogComponent,
     UserCardComponent,
     BookingsComponent,
-    EnvisageTimelogComponent
+    EnvisageTimelogComponent,
+    SideNavbarComponent,
+    EventSchedulerComponent,
+    TopNavBarComponent
   ],
   imports: [
     BrowserModule,

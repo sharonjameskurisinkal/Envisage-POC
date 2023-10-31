@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+.body{
+    background: #171818;
+    margin: 0px;
+    font-family: "Exo", sans-serif !important;
+}
+
+:root {
+    --fc-today-bg-color: #171818 !important;
+
+  }
+
+  .fc .fc-timegrid-slot-label-cushion {
+    color: #fff;
+    font-family: Exo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .fc .fc-timegrid-slot {
+    height: 5.75em;
+}
+
+.fc{
+  font-family: "Exo", sans-serif !important;
+
+}
+
+.fc .fc-toolbar-title{
+  color: #FFF;
+font-family: Exo;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.fc .fc-col-header-cell-cushion{
+  color: #FFF;
+font-family: Exo;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.fc .fc-timegrid-slot-label-cushion{
+  color: rgba(255, 255, 255, 0.60);
+    font-family: Exo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.fc .fc-timegrid-slot-label {
+  vertical-align: top;
+}
+
+.fc-v-event {
+  border-radius: 3px;
+  border-left: 3px solid var(--primary-dark-blue-01, #046F9C);
+  background: #151E21;
+}
+
+.mt-12{
+  margin-top: 12px;
+}
+
+.fc-theme-standard td{
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}

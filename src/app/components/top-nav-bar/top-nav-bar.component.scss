@@ -1,0 +1,101 @@
+
+.top-nav-bar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #1c1c1c;
+    align-self: start;
+    display: flex;
+    width: 98%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 11px 20px 11px 16px;
+    // height: 50px;
+    height: 4vh;
+  }
+  @media (max-width: 991px) {
+    .top-nav-bar{
+      max-width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .logo-div{
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  @media (max-width: 991px) {
+    .logo-div{
+      justify-content: center;
+    }
+  }
+  .logo-img {
+    object-fit: cover;
+    object-position: center;
+    width: 28px;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .page-title{
+    color: #fff;
+    margin: auto 0;
+    font: 700 14px/142.857% Exo, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  .down-arrow{
+    object-position: center;
+    width: 14px;
+    overflow: hidden;
+    align-self: center;
+    margin: auto 0;
+  }
+  .search-bar {
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    align-self: stretch;
+    display: flex;
+    width: 321px;
+    max-width: 100%;
+    flex-direction: column;
+    padding: 11px 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .search-text {
+    color: #fff;
+    opacity: 0.6;
+    align-self: start;
+    text-wrap: nowrap;
+    font: 400 13px/133.333% Exo, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  @media (max-width: 991px) {
+    .search-text {
+      text-wrap: initial;
+    }
+  }
+  .notification-div{
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .notification {
+    margin: auto 0;
+    height: 23px;
+    width: 20px;
+    padding-right: 5px;
+  }
+  .signed-in-user {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin: auto 0;
+  }

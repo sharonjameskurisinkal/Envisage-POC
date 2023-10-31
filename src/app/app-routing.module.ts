@@ -6,6 +6,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { TimeLogComponent } from './components/time-log/time-log.component';
 import { BookingsComponent } from './components/bookings/bookings.component';
 import { EnvisageTimelogComponent } from './components/envisage-timelog/envisage-timelog.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [  { path: 'login', component: LoginComponent },
 { path: 'timelog', component: TimeLogComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [  { path: 'login', component: LoginComponent },
 { path: 'error', component: ErrorComponent },
 { path: 'booking', component: BookingsComponent },
 { path: 'envisage-timelog', component: EnvisageTimelogComponent },
-{ path: '', component: LoginComponent },];
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
